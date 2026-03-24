@@ -1,0 +1,217 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #f6f1e8; /* krem lembut */
+    color: #4b2e2b; /* cokelat tua */
+}
+
+/* ================= HEADER ================= */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 70px;
+    background: linear-gradient(135deg, #5c3a21, #8b5e3c); /* cokelat kayu */
+    color: #fff8ec;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1000;
+    box-shadow: 0 6px 20px rgba(92,58,33,0.4);
+}
+
+/* ================= SIDEBAR ================= */
+/* ================= SIDEBAR ================= */
+.sidebar {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    width: 250px;
+    height: calc(100vh - 70px);
+    background: #e0c3a3; /* krem coklat */
+    border-right: 1px solid rgba(92,58,33,0.2);
+    padding-top: 25px;
+    overflow-y: auto;
+    transition: 0.3s ease;
+}
+
+/* ===== HILANGKAN TITIK BULAT & SPACING DEFAULT ===== */
+.sidebar ul {
+    list-style: none;   /* hilangkan bullet */
+    padding: 0;         /* hilangkan padding kiri default */
+    margin: 0;          /* hilangkan margin default */
+}
+
+.sidebar ul li {
+    list-style: none;   /* extra aman */
+}
+
+/* ================= MENU TITLE ================= */
+/* ================= MENU TITLE ================= */
+.menu-title {
+    font-size: 11px;
+    font-weight: 700;
+    color: #5c3a21; /* coklat tua biar kontras */
+    padding: 18px 28px 8px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* ================= MENU LINK ================= */
+.sidebar ul li a {
+    display: block;
+    padding: 12px 20px;
+    margin: 8px 16px;
+    color: #4b2e2b; /* coklat tua */
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    border-radius: 14px;
+    transition: 0.25s ease;
+}
+
+.sidebar ul li a:hover {
+    background: rgba(92,58,33,0.15); /* coklat transparan */
+    color: #3b2218;
+    transform: translateX(6px);
+}
+
+.sidebar ul li a.active {
+    background: #8b5e3c;
+    color: #ffffff;
+    box-shadow: 0 6px 18px rgba(92,58,33,0.4);
+}
+
+/* ================= SCROLLBAR ================= */
+.sidebar::-webkit-scrollbar {
+    width: 6px;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+    background: #8b5e3c;
+    border-radius: 10px;
+}
+
+/* ================= CONTENT ================= */
+.content {
+    background: #f6f1e8;
+    margin-left: 250px;
+    padding: 110px 40px 40px;
+}
+
+/* ================= CARD ================= */
+.container {
+    background: #fffaf2;
+    border-radius: 22px;
+    padding: 35px;
+    border: 1px solid rgba(92,58,33,0.2);
+    box-shadow: 0 12px 30px rgba(92,58,33,0.15);
+    animation: fadeIn 0.4s ease;
+}
+
+/* ================= HEADINGS ================= */
+h1, h2, h3 {
+    color: #5c3a21;
+}
+
+/* ================= INPUT ================= */
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 12px 14px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    border-radius: 12px;
+    border: 1px solid rgba(92,58,33,0.3);
+    background: #fffdf9;
+    color: #4b2e2b;
+    transition: 0.25s ease;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #8b5e3c;
+    box-shadow: 0 0 0 3px rgba(139,94,60,0.3);
+}
+
+/* ================= BUTTON ================= */
+.btn {
+    display: inline-block;
+    background: linear-gradient(135deg, #5c3a21, #8b5e3c);
+    color: #fff8ec;
+    padding: 10px 26px;
+    border-radius: 40px;
+    text-decoration: none;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: 0.25s ease;
+    box-shadow: 0 5px 15px rgba(92,58,33,0.4);
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(92,58,33,0.6);
+}
+
+/* Secondary Button */
+.btn-secondary {
+    background: transparent;
+    border: 1px solid #8b5e3c;
+    color: #5c3a21;
+}
+
+.btn-secondary:hover {
+    background: #8b5e3c;
+    color: #ffffff;
+}
+
+/* ================= TABLE ================= */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: #fffaf2;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(92,58,33,0.15);
+}
+
+table th {
+    background: linear-gradient(135deg, #5c3a21, #8b5e3c);
+    color: #ffffff;
+    padding: 14px;
+    font-weight: 600;
+}
+
+table td {
+    padding: 14px;
+    border-bottom: 1px solid rgba(92,58,33,0.15);
+}
+
+table tr:hover {
+    background: rgba(139,94,60,0.1);
+}
+
+/* ================= ANIMATION ================= */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

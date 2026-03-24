@@ -1,0 +1,114 @@
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+.judul-halaman {
+    color: #ff6b57;
+    margin-bottom: 20px;
+}
+
+.back-btn {
+    display: inline-block;
+    margin-bottom: 15px;
+    text-decoration: none;
+    color: #555;
+}
+
+.search-box {
+    padding: 8px;
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.dropdown-edisi {
+    margin-bottom: 25px;
+    max-width: 300px;
+}
+
+.custom-select {
+    position: relative;
+    font-family: Arial;
+}
+
+.select-selected {
+    background-color: #222;
+    color: #fff;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.select-items {
+    position: absolute;
+    background-color: #111;
+    top: 100%;
+    left: 0;
+    right: 0;
+    max-height: 250px;
+    overflow-y: auto;
+    border-radius: 6px;
+    border: 1px solid #333;
+    z-index: 99;
+}
+
+.select-option {
+    padding: 10px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.select-option:hover {
+    background-color: #333;
+}
+
+.select-hide {
+    display: none;
+}
+.edisi-item {
+    flex: 0 0 auto;
+    padding: 6px 14px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    text-decoration: none;
+    background: #f5f5f5;
+    color: #333;
+    transition: 0.2s;
+}
+
+.edisi-item:hover {
+    background: #ff6b57;
+    color: white;
+    border-color: #ff6b57;
+}
+
+.main-detail {
+    margin-top: 40px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.detail-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.cover-box img {
+    width: 180px;
+    border-radius: 6px;
+}
+
+.info-box {
+    flex: 1;
+    min-width: 250px;
+}
+
+.sinopsis {
+    margin-top: 10px;
+}
